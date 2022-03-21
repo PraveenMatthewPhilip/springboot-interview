@@ -1,7 +1,7 @@
 
 tasks:
-  - init: ./mvnw install -DskipTests=false
-    command: ./mvnw spring-boot:run
+  - init: chmod a+x mvnw
+    command: ./mvnw install -DskipTests=false && ./mvnw spring-boot:run
     
 # exposed ports
 ports:
